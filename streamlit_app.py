@@ -23,4 +23,4 @@ if st.button("Quiz speichern"):
     with open(f"quiz_{quiz_id}.json", "w", encoding="utf-8") as f:
         json.dump(quiz_data, f, ensure_ascii=False, indent=2)
     st.success(f"Quiz gespeichert! Teile diesen Link mit deinen Freunden:")
-    st.code(f"https://deine-app-url.com/play_quiz?code={quiz_id}")
+    t.code(f"Dein Quiz-Code ist: {quiz_id}")
